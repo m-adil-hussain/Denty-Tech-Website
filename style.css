@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+html,body {
+    height: 100%;
+    width: 100%;
+}
+main {
+    height: 100%;
+    width: 100%;
+}
+main header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header .left {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+header .left h2,
+header .left i {
+    font-size: large;
+    font-weight: 500;
+    border: 1px solid black;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+header .center h2 {
+    font-size: xx-large;
+    font-weight: 600;
+}
+header .center h2 span {
+    color: orangered;
+}
+header .right button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: medium;
+    cursor: pointer;
+}
+header .right .btn1 {
+    border: 1px solid orangered;
+    color: orangered;
+    background-color: transparent;
+}
+header .right .btn2 {
+    color: white;
+    background-color: orangered;
+}
+main>h1 {
+    font-size: 10vw;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+img {
+    height: 450px;
+    width: 350px;
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+main .img1 {
+    transform: translate(-50%, -50%) rotate(-40deg);
+}
+main .img2 {
+    transform: translate(-50%, -50%) rotate(-30deg);
+}
+main .img3 {
+    transform: translate(-50%, -50%) rotate(-20deg);
+}
+main .img4 {
+    transform: translate(-50%, -50%) rotate(-10deg);
+}
+footer {
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+footer .left h2{
+    font-size: 15px;
+    font-weight: 500;
+}
+footer .center i{
+    font-size: 30px;
+    font-weight: 500;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 50%;
+}
+footer .right h2{
+    font-size: 15px;
+    font-weight: 500;
+}
+footer .right .icon{
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+footer .right .icon i {
+    font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+    img {
+        height: 300px;
+        width: 200px;
+    }
+}
